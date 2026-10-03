@@ -38,7 +38,19 @@
     // Safety timeout: dismiss loader after 2.5s max so it never gets stuck
     setTimeout(hideLoader, 2500);
 
+    let closeTimeout = null;
+
+    // Ensure initial JS state
+    modalBackdrop.style.zIndex = '-50';
+    modalBackdrop.style.visibility = 'hidden';
+
     function openModal() {
+      clearTimeout(closeTimeout);
+
+      // 1. Immediately elevate z-index to top and ensure visibility
+      modalBackdrop.style.zIndex = '100';
+      modalBackdrop.style.visibility = 'visible';
+
       // Ensure iframe src is always set to the Tally URL
       if (!iframe.src || !iframe.src.includes('tally.so')) {
         iframe.src = 'https://tally.so/r/KYbqoA';
@@ -71,6 +83,15 @@
 
       // Unlock body scroll
       document.body.classList.remove('overflow-hidden');
+
+      // 2. Lower z-index to bottom and hide visibility after transition finishes
+      clearTimeout(closeTimeout);
+      closeTimeout = setTimeout(() => {
+        if (modalBackdrop.classList.contains('opacity-0')) {
+          modalBackdrop.style.zIndex = '-50';
+          modalBackdrop.style.visibility = 'hidden';
+        }
+      }, 300);
     }
 
     // Attach click triggers to all registration buttons
