@@ -30,8 +30,8 @@ app.use((req, res) => {
 // Start HTTP server
 app.listen(PORT, () => {
   console.log('\n======================================================');
-  console.log('⚡ ETERNAL FLAME TECH (EFT) // STATIC SERVER');
-  console.log('🤖 CLB AI & Robotics - THPT Chuyên Nguyễn Thị Minh Khai');
-  console.log(`🌐 Server running at: http://localhost:${PORT}`);
+  console.log('ETERNAL FLAME TECH (EFT) // STATIC SERVER');
+  console.log('CLB AI & Robotics - THPT Chuyên Nguyễn Thị Minh Khai');
+  console.log(`Server running at: http://localhost:${PORT}`);
   console.log('======================================================\n');
 });

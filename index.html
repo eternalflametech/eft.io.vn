@@ -184,6 +184,7 @@
   <nav class="side-nav" id="sideNav" aria-label="Điều hướng các mục">
     <a href="#hero" class="side-dot active" data-section="hero" title="Trang chủ"><span class="dot-label">Trang chủ</span></a>
     <a href="#team" class="side-dot" data-section="team" title="Ban chủ nhiệm"><span class="dot-label">Ban Chủ Nhiệm</span></a>
+    <a href="#achievements" class="side-dot" data-section="achievements" title="Thành tựu"><span class="dot-label">Thành Tựu</span></a>
     <a href="#tech" class="side-dot" data-section="tech" title="Khung chuyên môn"><span class="dot-label">Khung Chuyên Môn</span></a>
     <a href="#roadmap" class="side-dot" data-section="roadmap" title="Kế hoạch 2026"><span class="dot-label">Kế Hoạch 2026</span></a>
     <a href="#rules" class="side-dot" data-section="rules" title="Quy chế & Lịch"><span class="dot-label">Quy Chế Sinh Hoạt</span></a>
@@ -205,6 +206,7 @@
         <ul class="nav-links" id="navLinks">
           <li class="nav-indicator" id="navIndicator" aria-hidden="true"></li>
           <li><a href="#team">Ban Chủ Nhiệm</a></li>
+          <li><a href="#achievements">Thành Tựu</a></li>
           <li><a href="#tech">Chuyên Môn</a></li>
           <li><a href="#roadmap">Kế Hoạch 2026</a></li>
           <li><a href="#rules">Quy Chế</a></li>
@@ -390,7 +392,159 @@
       </div>
     </section>
 
-    <!-- Section 3: Khung Chuyên Môn & Công Cụ (Snap 3) -->
+    <!-- Section: Thành Tựu & Dấu Ấn (Snap 3) -->
+    <section class="snap-section !py-8 md:!py-12" id="achievements">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full flex flex-col justify-center">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-5 sm:mb-6 reveal">
+          <span class="font-mono text-xs text-rose-500 uppercase tracking-widest font-semibold block mb-1.5">// DẤU ẤN & THÀNH TỰU THỰC CHIẾN</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-2">Thành Tựu & Hoạt Động Nổi Bật</h2>
+          <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+            Minh chứng sống động cho năng lực thực chiến, tinh thần đồng đội và ngọn lửa đam mê công nghệ của các thành viên EFT.
+          </p>
+        </div>
+
+        <!-- 3 Summary Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5 mb-5 sm:mb-6 reveal delay-1">
+          
+          <!-- Summary Card 1: Robocon -->
+          <div class="card-glass group flex flex-col overflow-hidden p-0 rounded-2xl hover:border-violet-500/40 transition-all duration-300">
+            <div class="relative aspect-[16/10] overflow-hidden bg-zinc-900">
+              <img src="assets/achievements/robocon/8.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <div class="absolute top-3 left-3">
+                <span class="badge-pill text-amber-300 border-amber-500/30 bg-black/60 backdrop-blur-md text-[11px] py-0.5 px-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0"></span>
+                  ROBOCON
+                </span>
+              </div>
+              <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] text-zinc-300">
+                <span class="font-mono text-zinc-400">Robocon ALT</span>
+                <span class="font-mono text-amber-400/90 font-medium">9 Hình Ảnh</span>
+              </div>
+            </div>
+
+            <div class="p-4 sm:p-5 flex flex-col flex-1 justify-between">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold text-white mb-1.5 group-hover:text-rose-300 transition-colors">
+                  Robocon ALT
+                </h3>
+                <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed line-clamp-2 sm:line-clamp-3 mb-4">
+                  Hoạt động thiết kế, lập trình và thi đấu robot thực chiến tại đấu trường Robocon của các thành viên CLB EFT.
+                </p>
+              </div>
+
+              <div class="pt-2 border-t border-white/5 flex items-center justify-between">
+                <button type="button" class="open-achievement-modal text-xs font-semibold text-rose-400 hover:text-rose-300 inline-flex items-center gap-1.5 transition-colors cursor-pointer" data-tab="robocon">
+                  <span>Khám phá chi tiết</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <span class="text-[11px] font-mono text-zinc-500">9 Ảnh</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary Card 2: Hackathon Lần I -->
+          <div class="card-glass group flex flex-col overflow-hidden p-0 rounded-2xl hover:border-violet-500/40 transition-all duration-300">
+            <div class="relative aspect-[16/10] overflow-hidden bg-zinc-900">
+              <img src="assets/achievements/hackathon/1.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <div class="absolute top-3 left-3">
+                <span class="badge-pill text-violet-300 border-violet-500/30 bg-black/60 backdrop-blur-md text-[11px] py-0.5 px-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-violet-400 shrink-0"></span>
+                  HACKATHON NỘI BỘ
+                </span>
+              </div>
+              <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] text-zinc-300">
+                <span class="font-mono text-zinc-400">THPT Chuyên NTMK</span>
+                <span class="font-mono text-violet-400/90 font-medium">28 Hình Ảnh</span>
+              </div>
+            </div>
+
+            <div class="p-4 sm:p-5 flex flex-col flex-1 justify-between">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold text-white mb-1.5 group-hover:text-violet-300 transition-colors">
+                  Hackathon Lần I
+                </h3>
+                <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed line-clamp-2 sm:line-clamp-3 mb-4">
+                  Đấu trường 4 tiếng: Lập trình ứng dụng AI Partyrock AWS và Thiết kế mô hình 3D Onshape CAD cùng tinh thần teamwork bùng nổ.
+                </p>
+              </div>
+
+              <div class="pt-2 border-t border-white/5 flex items-center justify-between">
+                <button type="button" class="open-achievement-modal text-xs font-semibold text-violet-400 hover:text-violet-300 inline-flex items-center gap-1.5 transition-colors cursor-pointer" data-tab="hackathon">
+                  <span>Khám phá chi tiết</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <span class="text-[11px] font-mono text-zinc-500">28 Ảnh</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary Card 3: Video Trận Đấu Kỷ Lục -->
+          <div class="card-glass group flex flex-col overflow-hidden p-0 rounded-2xl hover:border-violet-500/40 transition-all duration-300">
+            <div class="relative aspect-[16/10] overflow-hidden bg-zinc-900">
+              <img src="assets/achievements/robocon/1.jpg" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/30 flex items-center justify-center">
+                <div class="w-12 h-12 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-lg shadow-rose-900/40 group-hover:scale-110 transition-transform duration-300">
+                  <svg class="w-5 h-5 translate-x-0.5" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute top-3 left-3">
+                <span class="badge-pill text-rose-300 border-rose-500/30 bg-black/60 backdrop-blur-md text-[11px] py-0.5 px-2.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0"></span>
+                  VIDEO TRẬN ĐẤU
+                </span>
+              </div>
+              <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] text-zinc-300">
+                <span class="font-mono text-zinc-400">Video Robocon</span>
+                <span class="font-mono text-rose-400/90 font-medium">Bản HD</span>
+              </div>
+            </div>
+
+            <div class="p-4 sm:p-5 flex flex-col flex-1 justify-between">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold text-white mb-1.5 group-hover:text-rose-300 transition-colors">
+                  Trận Đấu Liên Minh Kỷ Lục
+                </h3>
+                <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed line-clamp-2 sm:line-clamp-3 mb-4">
+                  trận này EFT liên minh với FPT Sóc Trăng nìi, được điểm cao kỉ lục giải đấu lun
+                </p>
+              </div>
+
+              <div class="pt-2 border-t border-white/5 flex items-center justify-between">
+                <button type="button" class="open-achievement-modal text-xs font-semibold text-rose-400 hover:text-rose-300 inline-flex items-center gap-1.5 transition-colors cursor-pointer" data-tab="video">
+                  <span>Xem video & tư liệu</span>
+                  <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <span class="text-[11px] font-mono text-zinc-500">Video Player</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Action Button: Xem Full Thành Tựu & Tư Liệu -->
+        <div class="text-center reveal delay-2">
+          <button type="button" class="open-achievement-modal inline-flex items-center gap-2.5 px-6 py-2.5 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] border border-white/15 hover:border-violet-500/40 text-white text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer shadow-lg hover:shadow-violet-600/20 group" data-tab="robocon">
+            <svg class="w-4 h-4 text-violet-400 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <span>Xem Toàn Bộ Thành Tựu & Tư Liệu (37 Ảnh & Video)</span>
+            <svg class="w-4 h-4 text-zinc-400 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section: Khung Chuyên Môn & Công Cụ (Snap 4) -->
     <section class="snap-section" id="tech">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full">
         <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10 reveal">
@@ -610,7 +764,7 @@
     <section class="snap-section" id="join">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full flex flex-col justify-between h-full">
         <div class="rounded-2xl bg-gradient-to-br from-zinc-900/90 via-zinc-900/95 to-zinc-950 border border-white/10 p-7 sm:p-10 text-center shadow-2xl backdrop-blur-xl mb-6 reveal reveal-scale">
-          <div class="badge-pill mb-3">✦ THÔNG BÁO CHIÊU MỘ THÀNH VIÊN ✦</div>
+          <div class="badge-pill mb-3">THÔNG BÁO CHIÊU MỘ THÀNH VIÊN</div>
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight mb-2.5">Gia Nhập Eternal Flame Tech</h2>
           <p class="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto mb-6 leading-relaxed">
             Cơ hội học tập, nghiên cứu và làm chủ các công nghệ tiên phong cùng những người bạn đồng hành tài năng tại THPT Chuyên Nguyễn Thị Minh Khai.
@@ -655,6 +809,7 @@
               <h5 class="text-xs font-semibold text-white uppercase tracking-wider mb-2.5">Điều Hướng</h5>
               <ul class="space-y-1.5">
                 <li><a href="#team" class="hover:text-white transition-colors">Ban chủ nhiệm</a></li>
+                <li><a href="#achievements" class="hover:text-white transition-colors">Thành tựu & Dấu ấn</a></li>
                 <li><a href="#tech" class="hover:text-white transition-colors">Khung chuyên môn</a></li>
                 <li><a href="#roadmap" class="hover:text-white transition-colors">Kế hoạch triển khai</a></li>
                 <li><a href="#rules" class="hover:text-white transition-colors">Quy chế sinh hoạt</a></li>
@@ -664,7 +819,7 @@
             <div>
               <h5 class="text-xs font-semibold text-white uppercase tracking-wider mb-2.5">Kênh Thông Tin</h5>
               <ul class="space-y-1.5">
-                <li><a href="https://tally.so/r/KYbqoA" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:text-rose-300 font-medium transition-colors open-tally-modal">✦ Đăng ký tham gia thành viên</a></li>
+                <li><a href="https://tally.so/r/KYbqoA" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:text-rose-300 font-medium transition-colors open-tally-modal">Đăng ký tham gia thành viên</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61579958011741" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Facebook Fanpage</a></li>
                 <li><a href="https://eft.io.vn" class="hover:text-white transition-colors">Website: eft.io.vn</a></li>
                 <li><a href="https://chuyenminhkhaist.edu.vn/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Trường: chuyenminhkhaist.edu.vn</a></li>
@@ -742,6 +897,405 @@
     </div>
   </div>
 
+  <!-- Achievement Detail Modal Dialog (Full Writeup, Robocon & HackAthon 37 Photos Gallery & Video) -->
+  <div id="achievementDetailModal" class="fixed inset-0 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 opacity-0 pointer-events-none transition-all duration-300" aria-modal="true" role="dialog" aria-labelledby="achievementDetailTitle">
+    <div id="achievementDetailContent" class="relative w-full max-w-5xl h-[92vh] sm:h-[88vh] bg-zinc-950/95 border border-white/15 rounded-2xl shadow-2xl shadow-violet-950/40 flex flex-col overflow-hidden transform scale-95 opacity-0 transition-all duration-300">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-4 sm:px-6 py-3.5 border-b border-white/10 bg-zinc-900/80 backdrop-blur-md shrink-0">
+        <div class="flex items-center gap-3">
+          <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-violet-500 to-rose-500"></span>
+          <div>
+            <h2 id="achievementDetailTitle" class="text-sm sm:text-base font-bold text-white tracking-tight">
+              Kỷ Yếu Thành Tựu & Tư Liệu Hoạt Động
+            </h2>
+            <span class="text-[11px] text-zinc-400 hidden sm:inline">CLB AI & Robotics Eternal Flame Tech &bull; THPT Chuyên NTMK</span>
+          </div>
+        </div>
+
+        <!-- Modal Tabs (Robocon / Hackathon / Video) - NO EMOJIS -->
+        <div class="hidden md:flex items-center gap-1.5 bg-black/40 p-1 rounded-xl border border-white/10">
+          <button type="button" class="achievement-modal-tab-btn active px-3.5 py-1 rounded-lg text-xs font-semibold transition-all duration-200 cursor-pointer bg-gradient-to-r from-violet-600 to-rose-600 text-white border border-white/20 shadow-md" data-tab="robocon">
+            Robocon
+          </button>
+          <button type="button" class="achievement-modal-tab-btn px-3.5 py-1 rounded-lg text-xs font-semibold transition-all duration-200 cursor-pointer bg-white/[0.04] text-zinc-400 border border-white/10 hover:text-white" data-tab="hackathon">
+            Hackathon Lần I
+          </button>
+          <button type="button" class="achievement-modal-tab-btn px-3.5 py-1 rounded-lg text-xs font-semibold transition-all duration-200 cursor-pointer bg-white/[0.04] text-zinc-400 border border-white/10 hover:text-white" data-tab="video">
+            Video Trận Đấu
+          </button>
+        </div>
+
+        <!-- Close Button -->
+        <button id="closeAchievementModal" aria-label="Đóng cửa sổ thành tựu" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/15 border border-white/10 text-zinc-300 hover:text-white flex items-center justify-center transition-colors cursor-pointer">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Tab Bar (visible on < md) -->
+      <div class="flex md:hidden items-center justify-around px-3 py-2 bg-zinc-900/90 border-b border-white/10 shrink-0 gap-1 overflow-x-auto">
+        <button type="button" class="achievement-modal-tab-btn active px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap cursor-pointer bg-gradient-to-r from-violet-600 to-rose-600 text-white border border-white/20 shadow-md" data-tab="robocon">
+          Robocon
+        </button>
+        <button type="button" class="achievement-modal-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap cursor-pointer bg-white/[0.04] text-zinc-400 border border-white/10 hover:text-white" data-tab="hackathon">
+          Hackathon I
+        </button>
+        <button type="button" class="achievement-modal-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap cursor-pointer bg-white/[0.04] text-zinc-400 border border-white/10 hover:text-white" data-tab="video">
+          Video Trận Đấu
+        </button>
+      </div>
+
+      <!-- Modal Body (Scrollable with 3 panes) -->
+      <div id="achievementDetailBody" class="flex-1 min-h-0 overflow-y-auto p-4 sm:p-6 lg:p-8 space-y-8 overscroll-contain">
+        
+        <!-- PANE 1: Robocon -->
+        <div class="achievement-modal-pane space-y-6" data-tab-pane="robocon">
+          <!-- Story Header -->
+          <div class="bg-gradient-to-br from-amber-500/10 via-violet-500/5 to-transparent border border-amber-500/20 rounded-2xl p-5 sm:p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-3">
+              <span class="badge-pill text-amber-300 border-amber-500/30 bg-amber-500/10">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0"></span>
+                ROBOCON &bull; EFT
+              </span>
+              <span class="font-mono text-xs text-zinc-400 bg-white/5 px-2.5 py-0.5 rounded-full border border-white/10">Robocon ALT</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Robocon ALT</h3>
+            <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+              Hoạt động thiết kế, chế tạo cơ khí 3D, lập trình vi điều khiển và thi đấu thực chiến tại đấu trường Robocon của các thành viên CLB EFT.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="tech-tag">Cơ Khí In 3D</span>
+              <span class="tech-tag">Mạch Nhúng & IoT</span>
+              <span class="tech-tag">Chiến Thuật Thi Đấu</span>
+              <span class="tech-tag">9 Ảnh Tư Liệu & Video</span>
+            </div>
+          </div>
+
+          <!-- Robocon 9 Photos Gallery Grid -->
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="text-sm font-bold text-white uppercase tracking-wider font-mono">// BỘ ẢNH TƯ LIỆU ROBOCON (9 HÌNH ẢNH)</h4>
+              <span class="text-xs text-zinc-400 font-mono">Bấm vào ảnh để phóng to</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-4">
+              <!-- 1.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/robocon/1.jpg" data-caption="">
+                <img src="assets/achievements/robocon/1.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 2.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/robocon/2.jpg" data-caption="">
+                <img src="assets/achievements/robocon/2.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 3.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/robocon/3.jpg" data-caption="">
+                <img src="assets/achievements/robocon/3.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 4.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/robocon/4.jpg" data-caption="">
+                <img src="assets/achievements/robocon/4.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 5.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/robocon/5.jpg" data-caption="">
+                <img src="assets/achievements/robocon/5.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 6.jpg (tâm linh x1) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/robocon/6.jpg" data-caption="tâm linh x1">
+                <img src="assets/achievements/robocon/6.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">tâm linh x1</span>
+                </div>
+              </div>
+              <!-- 7.jpg (tâm linh x2) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/robocon/7.jpg" data-caption="tâm linh x2">
+                <img src="assets/achievements/robocon/7.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">tâm linh x2</span>
+                </div>
+              </div>
+              <!-- 8.jpg (áo EFTTT) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/robocon/8.jpg" data-caption="áo EFTTT">
+                <img src="assets/achievements/robocon/8.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">áo EFTTT</span>
+                </div>
+              </div>
+              <!-- 9.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/robocon/9.jpg" data-caption="">
+                <img src="assets/achievements/robocon/9.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANE 2: Hackathon Lần I -->
+        <div class="achievement-modal-pane hidden space-y-6" data-tab-pane="hackathon">
+          <!-- Story Header -->
+          <div class="bg-gradient-to-br from-violet-500/10 via-rose-500/5 to-transparent border border-violet-500/20 rounded-2xl p-5 sm:p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-3">
+              <span class="badge-pill text-violet-300 border-violet-500/30 bg-violet-500/10">
+                <span class="w-1.5 h-1.5 rounded-full bg-violet-400 shrink-0"></span>
+                HACKATHON NỘI BỘ LẦN I &bull; THPT CHUYÊN NTMK
+              </span>
+              <span class="font-mono text-xs text-zinc-400 bg-white/5 px-2.5 py-0.5 rounded-full border border-white/10">Thời lượng: 4 Giờ</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Hackathon Lần I - Đấu Trường Trí Tuệ AI & Cơ Khí 3D</h3>
+            <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+              Không đơn thuần là một cuộc thi, Hackathon lần này là không gian trải nghiệm thực, học thật và làm thật: nơi học sinh được chạm tay vào AI, đưa ý tưởng lên mô hình 3D và biến những suy nghĩ táo bạo thành sản phẩm cụ thể. Quan trọng không kém, cuộc thi giúp các bạn học cách teamwork hiệu quả, biết kết nối, phối hợp và hỗ trợ lẫn nhau để cùng kiến tạo nên một cộng đồng công nghệ vững vàng và gắn kết.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono mb-4">
+              <div class="bg-white/[0.04] border border-white/10 rounded-xl p-3 text-violet-300">
+                <span class="font-bold text-white block mb-1">VÒNG 1: LẬP TRÌNH ỨNG DỤNG AI</span>
+                Partyrock AWS App Development & Prompt Engineering
+              </div>
+              <div class="bg-white/[0.04] border border-white/10 rounded-xl p-3 text-rose-300">
+                <span class="font-bold text-white block mb-1">VÒNG 2: THIẾT KẾ MÔ HÌNH 3D</span>
+                Mô hình hóa Onshape Cloud CAD & Thuyết trình
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="tech-tag">AWS Partyrock</span>
+              <span class="tech-tag">Onshape CAD</span>
+              <span class="tech-tag">Prompt Engineering</span>
+              <span class="tech-tag">Teamwork 4 Giờ</span>
+              <span class="tech-tag">28 Ảnh Tư Liệu</span>
+            </div>
+          </div>
+
+          <!-- Hackathon 28 Photos Gallery Grid -->
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="text-sm font-bold text-white uppercase tracking-wider font-mono">// BỘ ẢNH TƯ LIỆU HACKATHON (28 HÌNH ẢNH)</h4>
+              <span class="text-xs text-zinc-400 font-mono">Bấm vào ảnh để phóng to</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+              <!-- 1.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/1.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/1.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 2.jpg (Mấy sếppp ạ 🫡💗) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/2.jpg" data-caption="Mấy sếppp ạ 🫡💗">
+                <img src="assets/achievements/hackathon/2.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">Mấy sếppp ạ 🫡💗</span>
+                </div>
+              </div>
+              <!-- 3.jpg (Khai mạc thoai!✨) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/3.jpg" data-caption="Khai mạc thoai!✨">
+                <img src="assets/achievements/hackathon/3.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">Khai mạc thoai!✨</span>
+                </div>
+              </div>
+              <!-- 4.jpg (*tập trung*) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/4.jpg" data-caption="*tập trung*">
+                <img src="assets/achievements/hackathon/4.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">*tập trung*</span>
+                </div>
+              </div>
+              <!-- 5.jpg (Thẻ tên siu ngầu😎) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/5.jpg" data-caption="Thẻ tên siu ngầu😎">
+                <img src="assets/achievements/hackathon/5.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">Thẻ tên siu ngầu😎</span>
+                </div>
+              </div>
+              <!-- 6.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/6.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/6.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 7.jpg (Team Robot GenZ siu thân thiện nèee😻) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/7.jpg" data-caption="Team Robot GenZ siu thân thiện nèee😻">
+                <img src="assets/achievements/hackathon/7.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">Team Robot GenZ siu thân thiện nèee😻</span>
+                </div>
+              </div>
+              <!-- 8.jpg (Team Yêu Em Như Ngày Đầu với phong cách teamwork siu đỉnhhh👥) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/8.jpg" data-caption="Team Yêu Em Như Ngày Đầu với phong cách teamwork siu đỉnhhh👥">
+                <img src="assets/achievements/hackathon/8.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">Team Yêu Em Như Ngày Đầu với phong cách teamwork siu đỉnhhh👥</span>
+                </div>
+              </div>
+              <!-- 9.jpg (Team Hành Tinh Khỉ Đột với chiến thuật rất xuất sắc🙌) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/9.jpg" data-caption="Team Hành Tinh Khỉ Đột với chiến thuật rất xuất sắc🙌">
+                <img src="assets/achievements/hackathon/9.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">Team Hành Tinh Khỉ Đột với chiến thuật rất xuất sắc🙌</span>
+                </div>
+              </div>
+              <!-- 10.jpg (Team Techflop 💅 dễ thưn nhất cuộc thi) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/10.jpg" data-caption="Team Techflop 💅 dễ thưn nhất cuộc thi">
+                <img src="assets/achievements/hackathon/10.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">Team Techflop 💅 dễ thưn nhất cuộc thi</span>
+                </div>
+              </div>
+              <!-- 11.jpg (Team Robot 7 Màu rất đáng gờm 😈) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/11.jpg" data-caption="Team Robot 7 Màu rất đáng gờm 😈">
+                <img src="assets/achievements/hackathon/11.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">Team Robot 7 Màu rất đáng gờm 😈</span>
+                </div>
+              </div>
+              <!-- 12.jpg (Team Robot Trái Cây siu năng suất trong suốt quá trình thi 🔥) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/12.jpg" data-caption="Team Robot Trái Cây siu năng suất trong suốt quá trình thi 🔥">
+                <img src="assets/achievements/hackathon/12.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">Team Robot Trái Cây siu năng suất trong suốt quá trình thi 🔥</span>
+                </div>
+              </div>
+              <!-- 13.jpg (🗣️"TUYET DOI DIEN ANH" 🥇🏆CHÚC MỪNG TEAM GENMATRIC đã giành vị trí Quán quânnn🥇🏆) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/13.jpg" data-caption="🗣️&quot;TUYET DOI DIEN ANH&quot;&#10;🥇🏆CHÚC MỪNG TEAM GENMATRIC đã giành vị trí Quán quânnn🥇🏆">
+                <img src="assets/achievements/hackathon/13.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white leading-tight">🗣️&quot;TUYET DOI DIEN ANH&quot; 🥇🏆 Quán quân GENMATRIC</span>
+                </div>
+              </div>
+              <!-- 14.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/14.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/14.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 15.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/15.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/15.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 16.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/16.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/16.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 17.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/17.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/17.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 18.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/18.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/18.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 19.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/19.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/19.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 20.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/20.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/20.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 21.jpg ((hình như dưới đất mát hơn á)) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/21.jpg" data-caption="(hình như dưới đất mát hơn á)">
+                <img src="assets/achievements/hackathon/21.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
+                  <span class="text-xs font-medium text-white">(hình như dưới đất mát hơn á)</span>
+                </div>
+              </div>
+              <!-- 22.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/22.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/22.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 23.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/23.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/23.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 24.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/24.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/24.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 25.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/25.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/25.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 26.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/26.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/26.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+              <!-- 27.jpg (Kỷ niệm bế mạc) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md col-span-2 row-span-2" data-full-src="assets/achievements/hackathon/27.jpg" data-caption="Dù cuộc thi đã kết thúc, nhưng thật sự nó đã để lại rất nhiều kỉ niệm cho chúng mình...&#10;Xin gửi lời cảm ơn CHÂN THÀNH và RỰC RỠ nhất đến TẤT CẢ các đội thi đã cùng nhau 'chiến' hết mình trong suốt hàng giờ.&#10;💞 Chiến thắng đều rất xứng đáng với các đội, nhưng điều quan trọng hơn cả là những mối quan hệ và kiến thức các bạn đã xây dựng được🫂&#10;✨💐Một lần nữa cảm ơn các bạn đã tham dự cuộc thi HACKATHON LẦN THỨ I - CLB AI ROBOTICS EFT. Hẹn gặp lại mọi người trong cuộc thi tiếp theooo🏆🏆">
+                <img src="assets/achievements/hackathon/27.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-3">
+                  <span class="text-xs font-semibold text-white">Ảnh bế mạc & Kỷ niệm toàn đoàn Hackathon Lần I</span>
+                </div>
+              </div>
+              <!-- 28.jpg (Blank) -->
+              <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-white/10 group cursor-pointer achievement-photo-trigger bg-zinc-900 shadow-md" data-full-src="assets/achievements/hackathon/28.jpg" data-caption="">
+                <img src="assets/achievements/hackathon/28.jpg" alt="" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANE 3: Video Trận Đấu -->
+        <div class="achievement-modal-pane hidden space-y-6" data-tab-pane="video">
+          <div class="bg-gradient-to-br from-rose-500/10 via-violet-500/5 to-transparent border border-rose-500/20 rounded-2xl p-5 sm:p-6">
+            <span class="badge-pill mb-3 text-rose-300 border-rose-500/30 bg-rose-500/10">
+              <span class="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0"></span>
+              VIDEO TRẬN ĐẤU &bull; ROBOCON ALT
+            </span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Trận Đấu Liên Minh Kỷ Lục</h3>
+            <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+              trận này EFT liên minh với FPT Sóc Trăng nìi, được điểm cao kỉ lục giải đấu lun
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="tech-tag">Robocon ALT</span>
+              <span class="tech-tag">Liên Minh FPT Sóc Trăng</span>
+              <span class="tech-tag">Điểm Cao Kỷ Lục</span>
+            </div>
+          </div>
+
+          <!-- Video Player Container -->
+          <div class="relative rounded-2xl overflow-hidden aspect-video border border-white/15 bg-black shadow-2xl">
+            <video class="w-full h-full object-cover" controls preload="metadata" poster="assets/achievements/robocon/1.jpg">
+              <source src="assets/achievements/robocon/10.mp4" type="video/mp4">
+              Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievements Photo Lightbox Modal -->
+  <div id="achievementLightbox" class="fixed inset-0 bg-black/95 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 opacity-0 pointer-events-none transition-all duration-300 overscroll-contain" aria-modal="true" role="dialog">
+    <div id="lightboxCard" class="relative max-w-5xl w-full max-h-[92vh] flex flex-col items-center justify-center lightbox-backdrop-click overscroll-contain">
+      <!-- Close button -->
+      <button id="closeLightbox" aria-label="Đóng xem ảnh" class="absolute -top-12 right-0 sm:right-2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-white flex items-center justify-center transition-colors cursor-pointer z-30">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Prev button -->
+      <button id="prevLightbox" aria-label="Ảnh trước" class="absolute left-1 sm:-left-14 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/70 sm:bg-white/10 hover:bg-white/25 border border-white/20 text-white flex items-center justify-center transition-colors cursor-pointer z-30 shadow-lg">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Next button -->
+      <button id="nextLightbox" aria-label="Ảnh sau" class="absolute right-1 sm:-right-14 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/70 sm:bg-white/10 hover:bg-white/25 border border-white/20 text-white flex items-center justify-center transition-colors cursor-pointer z-30 shadow-lg">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Image display container -->
+      <div class="relative w-full max-h-[78vh] flex items-center justify-center overflow-hidden rounded-2xl border border-white/15 bg-zinc-950/90 shadow-2xl p-1.5 sm:p-2">
+        <img id="lightboxImg" src="" alt="Chi tiết hình ảnh thành tựu" class="max-h-[75vh] max-w-full w-auto h-auto object-contain select-none rounded-xl">
+      </div>
+
+      <!-- Caption bar -->
+      <div class="mt-3 text-center px-4 max-w-3xl w-full">
+        <p id="lightboxCaption" class="text-xs sm:text-sm font-medium text-zinc-300 whitespace-pre-line leading-relaxed max-h-36 overflow-y-auto px-2 overscroll-contain text-center"></p>
+      </div>
+    </div>
+  </div>
+
   <!-- EFT Modular Scripts (Compatible with file:/// and http://) -->
   <script src="js/modules/navbar.js"></script>
   <script src="js/modules/canvas.js"></script>
@@ -749,6 +1303,7 @@
   <script src="js/modules/scroll.js"></script>
   <script src="js/modules/stepper.js"></script>
   <script src="js/modules/modal.js"></script>
+  <script src="js/modules/achievements.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

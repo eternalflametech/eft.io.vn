@@ -25,6 +25,7 @@
     if (typeof EFT.initBackToTop === 'function') EFT.initBackToTop();
     if (typeof EFT.initKeyboardSnap === 'function') EFT.initKeyboardSnap();
     if (typeof EFT.initModal === 'function') EFT.initModal();
+    if (typeof EFT.initAchievements === 'function') EFT.initAchievements();
   }
 
   if (document.readyState === 'loading') {

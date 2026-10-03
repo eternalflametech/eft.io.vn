@@ -16,6 +16,8 @@
 
     window.addEventListener('keydown', (e) => {
       if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+      // Do not snap sections if any modal is open or body is scroll-locked
+      if (document.body.classList.contains('overflow-hidden') || (window.EFT?.ModalManager?.stack?.length > 0)) return;
 
       const currentScroll = window.scrollY;
       let currentIndex = 0;

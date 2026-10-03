@@ -363,3 +363,48 @@
   visibility: hidden !important;
 }
 
+/* Achievement Detail Modal Stacking */
+#achievementDetailModal {
+  z-index: -50;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, z-index 0.3s step-end;
+}
+
+#achievementDetailModal:not(.opacity-0) {
+  z-index: 100;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease, z-index 0s;
+}
+
+#achievementDetailModal.opacity-0 #achievementDetailContent {
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
+/* Achievement Photo Lightbox Modal Stacking */
+#achievementLightbox {
+  z-index: -50;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, z-index 0.3s step-end;
+}
+
+#achievementLightbox:not(.opacity-0) {
+  z-index: 120;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease, z-index 0s;
+}
+
+/* Modal Scroll Containment & Mobile Touch Optimization */
+#tallyModal,
+#tallyModalContent,
+#achievementDetailModal,
+#achievementDetailContent,
+#achievementDetailBody,
+#achievementLightbox,
+#lightboxCard,
+#lightboxCaption {
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+
