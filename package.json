@@ -1,0 +1,39 @@
+{
+  "name": "eft.io.vn",
+  "version": "1.0.0",
+  "description": "Trang web giới thiệu chính thức của Câu Lạc Bộ AI & Robotics - Eternal Flame Tech (EFT), Trường THPT Chuyên Nguyễn Thị Minh Khai.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run watch:css\" \"node server.js\"",
+    "build": "npm run build:css",
+    "build:css": "tailwindcss -i ./src/input.css -o ./css/style.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./css/style.css --watch",
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eternalflametech/eft.io.vn.git"
+  },
+  "keywords": [
+    "ai",
+    "robotics",
+    "eternal-flame-tech",
+    "eft"
+  ],
+  "author": "Eternal Flame Tech Club",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eternalflametech/eft.io.vn/issues"
+  },
+  "homepage": "https://eft.io.vn",
+  "devDependencies": {
+    "autoprefixer": "^10.6.1",
+    "concurrently": "^10.0.5",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^3.4.19"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Eternal Flame Tech - CLB AI & Robotics",
+  "short_name": "EFT Club",
+  "description": "Câu Lạc Bộ AI & Robotics - Trường THPT Chuyên Nguyễn Thị Minh Khai, Thành Phố Cần Thơ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

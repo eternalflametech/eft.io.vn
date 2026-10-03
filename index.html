@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.add('js');</script>
+  
+  <!-- Primary Meta Tags -->
+  <title>Eternal Flame Tech (EFT) | CLB AI & Robotics - THPT Chuyên Nguyễn Thị Minh Khai</title>
+  <meta name="title" content="Eternal Flame Tech (EFT) | CLB AI & Robotics - THPT Chuyên Nguyễn Thị Minh Khai">
+  <meta name="description" content="Eternal Flame Tech (EFT) - CLB Khoa học Kỹ thuật, AI & Robotics hàng đầu tại THPT Chuyên Nguyễn Thị Minh Khai, Cần Thơ. Đào tạo chuyên sâu Trí tuệ nhân tạo, Vi điều khiển Arduino & ESP32, Thiết kế 3D Onshape và Chế tạo Robot.">
+  <meta name="keywords" content="Eternal Flame Tech, EFT, eft.io.vn, CLB AI, CLB Robotics, THPT Chuyên Nguyễn Thị Minh Khai, Cần Thơ, Trí tuệ nhân tạo, Hệ thống nhúng, Arduino, ESP32, Máy in 3D, Onshape, Vibe Coding, STEM Cần Thơ">
+  <meta name="author" content="Ban Chủ Nhiệm Eternal Flame Tech">
+  <meta name="publisher" content="Eternal Flame Tech Club">
+  <meta name="copyright" content="Eternal Flame Tech 2026">
+  <link rel="canonical" href="https://eft.io.vn/">
+  
+  <!-- Search Engine Robots -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+  <!-- Geotagging & Local SEO (Can Tho, Vietnam) -->
+  <meta name="geo.region" content="VN-CT">
+  <meta name="geo.placename" content="Cần Thơ, Việt Nam">
+  <meta name="geo.position" content="10.0333;105.7833">
+  <meta name="ICBM" content="10.0333, 105.7833">
+
+  <!-- Open Graph / Facebook / Zalo -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eft.io.vn/">
+  <meta property="og:site_name" content="Eternal Flame Tech (EFT)">
+  <meta property="og:title" content="Eternal Flame Tech (EFT) | CLB AI & Robotics - THPT Chuyên Nguyễn Thị Minh Khai">
+  <meta property="og:description" content="Không gian học thuật và thực nghiệm chuyên sâu về Trí tuệ nhân tạo, Hệ thống nhúng vi điều khiển, Thiết kế 3D và Chế tạo Robot dành cho học sinh THPT Chuyên Nguyễn Thị Minh Khai, TP. Cần Thơ.">
+  <meta property="og:image" content="https://eft.io.vn/assets/logo.jpg">
+  <meta property="og:image:secure_url" content="https://eft.io.vn/assets/logo.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:image:alt" content="Logo chính thức CLB AI & Robotics Eternal Flame Tech">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://eft.io.vn/">
+  <meta name="twitter:title" content="Eternal Flame Tech (EFT) | CLB AI & Robotics - THPT Chuyên Nguyễn Thị Minh Khai">
+  <meta name="twitter:description" content="CLB AI & Robotics - THPT Chuyên Nguyễn Thị Minh Khai, Cần Thơ. Nghiên cứu Trí tuệ nhân tạo, IoT/Nhúng, 3D CAD và Robot.">
+  <meta name="twitter:image" content="https://eft.io.vn/assets/logo.jpg">
+  <meta name="twitter:image:alt" content="Insignia Eternal Flame Tech">
+
+  <!-- Mobile & PWA Theme -->
+  <meta name="theme-color" content="#09090b">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Eternal Flame Tech">
+  <meta name="application-name" content="Eternal Flame Tech">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/logo.jpg">
+
+  <!-- Google Fonts: Preconnected for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet (Tailwind CSS Compiled) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data: Schema.org JSON-LD (EducationalOrganization, WebSite, Breadcrumbs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://eft.io.vn/#organization",
+        "name": "Eternal Flame Tech",
+        "alternateName": ["EFT", "CLB AI & Robotics Eternal Flame Tech", "EFT Club"],
+        "url": "https://eft.io.vn/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://eft.io.vn/assets/logo.jpg",
+          "caption": "Logo chính thức của Eternal Flame Tech"
+        },
+        "image": "https://eft.io.vn/assets/logo.jpg",
+        "description": "Câu lạc bộ Khoa học Kỹ thuật chuyên sâu về Trí tuệ nhân tạo (AI), Hệ thống nhúng vi điều khiển (Arduino, ESP32), Thiết kế cơ khí 3D và Chế tạo Robot dành cho học sinh THPT Chuyên Nguyễn Thị Minh Khai.",
+        "email": "eternalflametech.eft@gmail.com",
+        "foundingDate": "2026",
+        "parentOrganization": {
+          "@type": "HighSchool",
+          "name": "Trường THPT Chuyên Nguyễn Thị Minh Khai",
+          "url": "https://chuyenminhkhaist.edu.vn/",
+          "sameAs": "https://chuyenminhkhaist.edu.vn/",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Thành Phố Cần Thơ",
+            "addressCountry": "VN"
+          }
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cần Thơ",
+          "addressCountry": "VN"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61579958011741",
+          "https://github.com/eternalflametech/eft.io.vn"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://eft.io.vn/#website",
+        "url": "https://eft.io.vn/",
+        "name": "Eternal Flame Tech (EFT)",
+        "description": "Cổng thông tin và đăng ký chính thức của CLB AI & Robotics Eternal Flame Tech",
+        "publisher": {
+          "@id": "https://eft.io.vn/#organization"
+        },
+        "inLanguage": "vi-VN"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://eft.io.vn/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang Chủ",
+            "item": "https://eft.io.vn/#hero"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ban Chủ Nhiệm",
+            "item": "https://eft.io.vn/#team"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Khung Chuyên Môn",
+            "item": "https://eft.io.vn/#tech"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Kế Hoạch Triển Khai",
+            "item": "https://eft.io.vn/#roadmap"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Quy Chế Sinh Hoạt",
+            "item": "https://eft.io.vn/#rules"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Đăng Ký Thành Viên",
+            "item": "https://eft.io.vn/#join"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased overflow-x-hidden min-h-screen relative selection:bg-violet-500/30 selection:text-white">
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- Ambient Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  
+  <!-- Grid Background Overlay -->
+  <div class="cyber-grid-overlay"></div>
+  <div class="radial-glow-top"></div>
+
+  <!-- Side Dot Navigation Stepper -->
+  <nav class="side-nav" id="sideNav" aria-label="Điều hướng các mục">
+    <a href="#hero" class="side-dot active" data-section="hero" title="Trang chủ"><span class="dot-label">Trang chủ</span></a>
+    <a href="#team" class="side-dot" data-section="team" title="Ban chủ nhiệm"><span class="dot-label">Ban Chủ Nhiệm</span></a>
+    <a href="#tech" class="side-dot" data-section="tech" title="Khung chuyên môn"><span class="dot-label">Khung Chuyên Môn</span></a>
+    <a href="#roadmap" class="side-dot" data-section="roadmap" title="Kế hoạch 2026"><span class="dot-label">Kế Hoạch 2026</span></a>
+    <a href="#rules" class="side-dot" data-section="rules" title="Quy chế & Lịch"><span class="dot-label">Quy Chế Sinh Hoạt</span></a>
+    <a href="#join" class="side-dot" data-section="join" title="Đăng ký"><span class="dot-label">Đăng Ký & Liên Hệ</span></a>
+  </nav>
+
+  <!-- Navigation Bar (Executive Floating Pill Navbar) -->
+  <header class="navbar" id="navbar">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4 relative">
+      <a href="#hero" class="flex items-center gap-3 no-underline shrink-0 group">
+        <img src="assets/logo.jpg" alt="Logo CLB AI và Robotics Eternal Flame Tech - EFT" width="40" height="40" class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg border border-white/15 object-cover shrink-0 shadow-md">
+        <div class="flex flex-col">
+          <span class="font-bold text-sm sm:text-base text-white leading-tight tracking-tight whitespace-nowrap">ETERNAL FLAME TECH</span>
+          <span class="hidden sm:block text-[11px] text-zinc-400 font-medium uppercase tracking-wider whitespace-nowrap">THPT Chuyên Nguyễn Thị Minh Khai</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-indicator" id="navIndicator" aria-hidden="true"></li>
+          <li><a href="#team">Ban Chủ Nhiệm</a></li>
+          <li><a href="#tech">Chuyên Môn</a></li>
+          <li><a href="#roadmap">Kế Hoạch 2026</a></li>
+          <li><a href="#rules">Quy Chế</a></li>
+          <li><a href="#join">Liên Hệ</a></li>
+        </ul>
+        <div class="mobile-menu-cta">
+          <a href="https://tally.so/r/KYbqoA" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full open-tally-modal">
+            <span>Đăng Ký Tham Gia</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="https://tally.so/r/KYbqoA" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm nav-cta-btn open-tally-modal">
+          <span>Đăng Ký Tham Gia</span>
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="12" y1="18" x2="12" y2="12"></line>
+            <line x1="9" y1="15" x2="15" y2="15"></line>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Mở menu" aria-expanded="false">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop Overlay -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- Section 1: Hero Section (Snap 1) -->
+    <section class="snap-section" id="hero">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full flex flex-col justify-between my-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div class="lg:col-span-7 flex flex-col items-start text-left reveal reveal-left">
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-3 leading-[1.15]">
+              ETERNAL <br>
+              <span class="gradient-text">FLAME TECH</span>
+            </h1>
+
+            <a href="https://chuyenminhkhaist.edu.vn/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-violet-400 hover:text-violet-300 transition-colors font-medium text-xs sm:text-sm md:text-base mb-3.5 sm:mb-4 group" title="Website chính thức Trường THPT Chuyên Nguyễn Thị Minh Khai">
+              <svg class="w-4 h-4 shrink-0 transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              <span class="group-hover:underline decoration-violet-400/50">Trường THPT Chuyên Nguyễn Thị Minh Khai &bull; Thành Phố Cần Thơ</span>
+              <svg class="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+
+            <p class="text-zinc-400 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mb-6">
+              Không gian học thuật và thực nghiệm chuyên sâu về Trí tuệ nhân tạo, Hệ thống nhúng vi điều khiển, Thiết kế cơ khí 3D và Chế tạo Robot dành cho học sinh THPT Chuyên Nguyễn Thị Minh Khai.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
+              <a href="https://tally.so/r/KYbqoA" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full sm:w-auto open-tally-modal">
+                <span>Đăng Ký Tham Gia</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="12" y1="18" x2="12" y2="12"></line>
+                  <line x1="9" y1="15" x2="15" y2="15"></line>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61579958011741" target="_blank" rel="noopener noreferrer" class="btn btn-secondary w-full sm:w-auto">
+                <span>Fanpage Câu Lạc Bộ</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.52-.14-2.71-.14-2.7 0-4.79 1.63-4.79 4.88V9.5H7v4h3V22h4v-8.5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Logo Presentation -->
+          <div class="lg:col-span-5 flex justify-center items-center reveal reveal-right delay-2">
+            <div class="relative w-full max-w-[240px] sm:max-w-[300px] lg:max-w-[340px]" id="logoCardWrapper">
+              <div class="absolute inset-0 bg-gradient-to-tr from-violet-600/30 to-rose-600/20 rounded-2xl blur-2xl transform scale-105 pointer-events-none"></div>
+              <div class="relative rounded-2xl bg-zinc-900/80 border border-white/10 p-3 shadow-2xl backdrop-blur-xl transition-transform duration-200" id="logoCard">
+                <div class="rounded-xl overflow-hidden aspect-square border border-white/5">
+                  <img src="assets/logo.jpg" alt="Biểu trưng chính thức CLB AI & Robotics Eternal Flame Tech - THPT Chuyên Nguyễn Thị Minh Khai" width="340" height="340" class="w-full h-full object-cover" loading="eager" fetchpriority="high">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator Hint for Mobile -->
+        <div class="pt-6 sm:pt-8 flex flex-col items-center justify-center lg:hidden opacity-75 transition-opacity duration-300" id="heroScrollHint">
+          <span class="text-[11px] font-mono tracking-wider text-zinc-400 uppercase mb-1">Cuộn để xem tiếp</span>
+          <svg class="w-4 h-4 text-violet-400 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Ban Chủ Nhiệm CLB 2026 (Snap 2) -->
+    <section class="snap-section" id="team">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full">
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10 reveal">
+          <span class="font-mono text-xs text-rose-500 uppercase tracking-widest font-semibold block mb-2">// NHÂN SỰ ĐIỀU HÀNH 2026</span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight mb-2">Ban Chủ Nhiệm Câu Lạc Bộ</h2>
+          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+            Đội ngũ phụ trách chuyên môn, tổ chức kế hoạch đào tạo và trực tiếp dẫn dắt các dự án nghiên cứu của EFT.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
+          <!-- Member 1 -->
+          <div class="card-glass reveal delay-1">
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center font-bold text-sm tracking-wider">NH</div>
+              <span class="font-mono text-xs bg-white/[0.05] border border-white/10 text-zinc-400 px-2 py-0.5 rounded">Lớp 11A5</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-semibold text-white mb-0.5">Nguyễn Nhật Hào</h3>
+            <span class="text-xs font-medium text-rose-400">Trưởng Ban Truyền Thông</span>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="card-glass reveal delay-2">
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center font-bold text-sm tracking-wider">MK</div>
+              <span class="font-mono text-xs bg-white/[0.05] border border-white/10 text-zinc-400 px-2 py-0.5 rounded">Lớp 12A3</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-semibold text-white mb-0.5">Nguyễn Minh Khôi</h3>
+            <span class="text-xs font-medium text-rose-400">Ban AI & Kỹ Thuật Số</span>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="card-glass reveal delay-3">
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center font-bold text-sm tracking-wider">TN</div>
+              <span class="font-mono text-xs bg-white/[0.05] border border-white/10 text-zinc-400 px-2 py-0.5 rounded">Lớp 11A3</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-semibold text-white mb-0.5">Nguyễn Trọng Nhân</h3>
+            <span class="text-xs font-medium text-rose-400">Ban AI & Kỹ Thuật Số</span>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="card-glass reveal delay-1">
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center font-bold text-sm tracking-wider">KT</div>
+              <span class="font-mono text-xs bg-white/[0.05] border border-white/10 text-zinc-400 px-2 py-0.5 rounded">Lớp 11A3</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-semibold text-white mb-0.5">Nguyễn Khánh Toàn</h3>
+            <span class="text-xs font-medium text-rose-400">Trưởng Ban Kỹ Thuật</span>
+          </div>
+
+          <!-- Member 5 -->
+          <div class="card-glass reveal delay-2">
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center font-bold text-sm tracking-wider">ĐĐ</div>
+              <span class="font-mono text-xs bg-white/[0.05] border border-white/10 text-zinc-400 px-2 py-0.5 rounded">Lớp 11A3</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-semibold text-white mb-0.5">Trần Đình Đàn</h3>
+            <span class="text-xs font-medium text-rose-400">Ban Kỹ Thuật & Thiết Kế 3D</span>
+          </div>
+
+          <!-- Member 6 -->
+          <div class="card-glass reveal delay-3">
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center font-bold text-sm tracking-wider">MP</div>
+              <span class="font-mono text-xs bg-white/[0.05] border border-white/10 text-zinc-400 px-2 py-0.5 rounded">Lớp 11A3</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-semibold text-white mb-0.5">Nguyễn Minh Phú</h3>
+            <span class="text-xs font-medium text-rose-400">Ban Kỹ Thuật & Thiết Kế 3D</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Khung Chuyên Môn & Công Cụ (Snap 3) -->
+    <section class="snap-section" id="tech">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full">
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10 reveal">
+          <span class="font-mono text-xs text-rose-500 uppercase tracking-widest font-semibold block mb-2">// KHUNG CHƯƠNG TRÌNH</span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight mb-2">Các Lĩnh Vực Chuyên Môn</h2>
+          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+            Cân bằng giữa lý thuyết thuật toán hiện đại, kỹ thuật lập trình phần mềm và năng lực chế tạo phần cứng.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Pillar 1: AI & LLMs -->
+          <div class="card-glass flex flex-col reveal delay-1">
+            <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center mb-3.5 shrink-0">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">Nền Tảng AI & LLM</h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4 grow">
+              Generative AI, AI Agents, kỹ thuật Prompt Engineering, xây dựng Chatbot chuyên biệt qua GPTs và Google AI Studio; kiểm soát và xử lý hiện tượng Hallucination.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-auto">
+              <span class="tech-tag">Prompt Engineering</span>
+              <span class="tech-tag">AI Agent</span>
+              <span class="tech-tag">Google AI Studio</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Robotics & Hardware -->
+          <div class="card-glass flex flex-col reveal delay-2">
+            <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center mb-3.5 shrink-0">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">Hệ Thống Nhúng & Mạch</h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4 grow">
+              Nguyên lý mạch bánh mì (Breadboard), lập trình vi điều khiển Arduino và ESP32; điều khiển động cơ DC/Servo, kết nối cảm biến và thiết bị ngoại vi.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-auto">
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">Arduino</span>
+              <span class="tech-tag">Breadboard</span>
+              <span class="tech-tag">Sensors</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Vibe Coding & Apps -->
+          <div class="card-glass flex flex-col reveal delay-3">
+            <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center mb-3.5 shrink-0">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">Vibe Coding & Ứng Dụng</h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4 grow">
+              Tối ưu hóa tốc độ lập trình và xây dựng ứng dụng qua Vibe Coding: ứng dụng công cụ hỗ trợ AI (Cursor AI, Google AntiGravity, Claude Code) vào dự án thực tế.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-auto">
+              <span class="tech-tag">Cursor AI</span>
+              <span class="tech-tag">Google AntiGravity</span>
+              <span class="tech-tag">Claude Code</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4: 3D CAD & Printing -->
+          <div class="card-glass flex flex-col reveal delay-4">
+            <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center mb-3.5 shrink-0">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">Thiết Kế 3D CAD & In 3D</h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4 grow">
+              Thực hành dựng mô hình 3D trên phần mềm Onshape; quy chuẩn kỹ thuật vận hành máy in 3D để tạo mẫu cơ cấu khớp và khung vỏ robot thi đấu.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-auto">
+              <span class="tech-tag">Onshape 3D</span>
+              <span class="tech-tag">3D Printing</span>
+              <span class="tech-tag">Cơ khí chính xác</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Kế Hoạch Hoạt Động 2026 - Roadmap (Snap 4) -->
+    <section class="snap-section" id="roadmap">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full">
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10 reveal">
+          <span class="font-mono text-xs text-rose-500 uppercase tracking-widest font-semibold block mb-2">// KẾ HOẠCH TRIỂN KHAI 2026</span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight mb-2">Lộ Trình Các Giai Đoạn</h2>
+          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+            Các nội dung tương lai được bảo lưu dạng nội bộ (?) nhằm giữ trọn vẹn sự bất ngờ cho thành viên chính thức.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Phase 1: AI Foundation (CURRENT / PUBLIC) -->
+          <div class="card-glass border-emerald-500/40 bg-emerald-950/20 flex flex-col reveal delay-1">
+            <span class="inline-flex items-center gap-1.5 font-mono text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 mb-2.5 self-start">
+              ● ĐANG TRIỂN KHAI
+            </span>
+            <span class="font-mono text-xs text-zinc-500 mb-1.5">20/10/2026 – 12/11/2026</span>
+            <h3 class="text-base font-semibold text-white mb-2">Giai Đoạn 1: AI Foundation</h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4 grow">
+              Tổng quan về GenAI, AI Agents, kỹ thuật Prompt Engineering; cấu trúc hoạt động của Chatbot AI; nhận diện Hallucination và kiểm chứng thông tin.
+            </p>
+            <div class="text-xs text-emerald-300/90 border-t border-emerald-500/20 pt-2.5 mt-auto">
+              <strong>Sản phẩm:</strong> Chatbot AI theo yêu cầu (GPTs, Google AI Studio)
+            </div>
+          </div>
+
+          <!-- Phase 2: CLASSIFIED FUTURE -->
+          <div class="card-glass flex flex-col reveal delay-2 group">
+            <span class="inline-flex items-center gap-1.5 font-mono text-[11px] px-2 py-0.5 rounded bg-white/[0.05] text-zinc-400 border border-white/10 mb-2.5 self-start">
+              BẢO LƯU NỘI BỘ
+            </span>
+            <span class="font-mono text-xs text-zinc-500 mb-1.5">15/11/2026 – 07/12/2026</span>
+            <h3 class="text-base font-semibold text-white mb-2">Giai Đoạn 2: ????? ?????</h3>
+            <div class="flex flex-col items-center justify-center grow py-8 my-auto select-none">
+              <span class="text-6xl sm:text-7xl font-black font-mono bg-gradient-to-b from-zinc-500 via-zinc-600 to-zinc-800 bg-clip-text text-transparent group-hover:from-violet-400 group-hover:to-rose-500 transition-all duration-300">?</span>
+            </div>
+          </div>
+
+          <!-- Phase 3: CLASSIFIED FUTURE -->
+          <div class="card-glass flex flex-col reveal delay-3 group">
+            <span class="inline-flex items-center gap-1.5 font-mono text-[11px] px-2 py-0.5 rounded bg-white/[0.05] text-zinc-400 border border-white/10 mb-2.5 self-start">
+              BẢO LƯU NỘI BỘ
+            </span>
+            <span class="font-mono text-xs text-zinc-500 mb-1.5">08/12/2026 – 08/01/2026</span>
+            <h3 class="text-base font-semibold text-white mb-2">Giai Đoạn 3: ????? ?????</h3>
+            <div class="flex flex-col items-center justify-center grow py-8 my-auto select-none">
+              <span class="text-6xl sm:text-7xl font-black font-mono bg-gradient-to-b from-zinc-500 via-zinc-600 to-zinc-800 bg-clip-text text-transparent group-hover:from-violet-400 group-hover:to-rose-500 transition-all duration-300">?</span>
+            </div>
+          </div>
+
+          <!-- Phase 4: CLASSIFIED FUTURE -->
+          <div class="card-glass flex flex-col reveal delay-4 group">
+            <span class="inline-flex items-center gap-1.5 font-mono text-[11px] px-2 py-0.5 rounded bg-white/[0.05] text-zinc-400 border border-white/10 mb-2.5 self-start">
+              MỤC TIÊU CHIẾN LƯỢC
+            </span>
+            <span class="font-mono text-xs text-zinc-500 mb-1.5">08/01/2026 Trở Đi</span>
+            <h3 class="text-base font-semibold text-white mb-2">Giai Đoạn 4: ????? ?????</h3>
+            <div class="flex flex-col items-center justify-center grow py-8 my-auto select-none">
+              <span class="text-6xl sm:text-7xl font-black font-mono bg-gradient-to-b from-zinc-500 via-zinc-600 to-zinc-800 bg-clip-text text-transparent group-hover:from-violet-400 group-hover:to-rose-500 transition-all duration-300">?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Hướng Dẫn & Quy Chế Chung (Snap 5) -->
+    <section class="snap-section" id="rules">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full">
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10 reveal">
+          <span class="font-mono text-xs text-rose-500 uppercase tracking-widest font-semibold block mb-2">// VẬN HÀNH & KỶ LUẬT</span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight mb-2">Quy Chế Sinh Hoạt & Tổ Chức</h2>
+          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+            Cơ chế hoạt động học thuật nghiêm túc, đề cao tính tự học, chia sẻ kiến thức và minh bạch tài chính.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="card-glass reveal delay-1">
+            <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center mb-3.5">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">Mô Hình Dẫn Dắt (Mentorship)</h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+              Các Trưởng ban chịu trách nhiệm học tập, nghiên cứu chuyên sâu và trực tiếp kèm cặp, hướng dẫn thành viên. Đảm bảo nắm vững kiến thức trọng tâm của ban mình và phối hợp chặt chẽ cùng các ban khác.
+            </p>
+          </div>
+
+          <div class="card-glass reveal delay-2">
+            <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center mb-3.5">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">Thời Gian Sinh Hoạt</h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+              <strong class="text-zinc-200">Trực tiếp (Offline):</strong> Sáng Chủ Nhật hàng tuần tại trường THPT Chuyên Nguyễn Thị Minh Khai (thực hành mạch, lắp ráp và in 3D).<br>
+              <strong class="text-zinc-200">Trực tuyến (Online):</strong> Tối Thứ Bảy hoặc Chủ Nhật (thảo luận lý thuyết và cập nhật tài liệu).
+            </p>
+          </div>
+
+          <div class="card-glass reveal delay-3">
+            <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/25 text-violet-300 flex items-center justify-center mb-3.5">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-white mb-2">Kinh Phí & Cơ Sở Vật Chất</h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+              Sau khi hoàn tất chiêu mộ, thành viên đóng một khoản kinh phí minh bạch phục vụ các hạng mục bắt buộc: Di chuyển tham dự các kỳ thi AI & Robotics, cuộn nhựa in 3D và các công cụ, linh kiện chế tạo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Call To Action & Footer (Snap 6) -->
+    <section class="snap-section" id="join">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full flex flex-col justify-between h-full">
+        <div class="rounded-2xl bg-gradient-to-br from-zinc-900/90 via-zinc-900/95 to-zinc-950 border border-white/10 p-7 sm:p-10 text-center shadow-2xl backdrop-blur-xl mb-6 reveal reveal-scale">
+          <div class="badge-pill mb-3">✦ THÔNG BÁO CHIÊU MỘ THÀNH VIÊN ✦</div>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight mb-2.5">Gia Nhập Eternal Flame Tech</h2>
+          <p class="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto mb-6 leading-relaxed">
+            Cơ hội học tập, nghiên cứu và làm chủ các công nghệ tiên phong cùng những người bạn đồng hành tài năng tại THPT Chuyên Nguyễn Thị Minh Khai.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-2.5 sm:gap-3 w-full sm:w-auto">
+            <a href="https://tally.so/r/KYbqoA" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full sm:w-auto open-tally-modal">
+              <span>Đăng Ký Tham Gia (Tally Form)</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="12" y1="18" x2="12" y2="12"></line>
+                <line x1="9" y1="15" x2="15" y2="15"></line>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61579958011741" target="_blank" rel="noopener noreferrer" class="btn btn-secondary w-full sm:w-auto">
+              <span>Trang Facebook CLB</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.52-.14-2.71-.14-2.7 0-4.79 1.63-4.79 4.88V9.5H7v4h3V22h4v-8.5z"/>
+              </svg>
+            </a>
+            <a href="mailto:eternalflametech.eft@gmail.com" class="btn btn-secondary w-full sm:w-auto">
+              <span>Email Liên Hệ</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Integrated Compact Footer in Snap 6 -->
+        <footer class="border-t border-white/10 pt-5 pb-2 text-xs text-zinc-400">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-5 reveal">
+            <div class="md:col-span-2">
+              <div class="flex items-center gap-2.5 mb-2">
+                <img src="assets/logo.jpg" alt="Insignia Eternal Flame Tech - EFT Cần Thơ" width="32" height="32" class="w-8 h-8 rounded-lg border border-white/10 object-cover" loading="lazy">
+                <span class="font-bold text-sm text-white tracking-tight">ETERNAL FLAME TECH</span>
+              </div>
+              <p class="text-zinc-400 text-xs leading-relaxed max-w-md">
+                Câu Lạc Bộ AI & Robotics &bull; <a href="https://chuyenminhkhaist.edu.vn/" target="_blank" rel="noopener noreferrer" class="text-violet-400 hover:text-violet-300 underline decoration-violet-400/30 transition-colors">Trường THPT Chuyên Nguyễn Thị Minh Khai</a>, Thành Phố Cần Thơ.<br>
+                Nghiên cứu học thuật, bồi dưỡng tài năng và phát triển kỹ năng thực tế.
+              </p>
+            </div>
+
+            <div>
+              <h5 class="text-xs font-semibold text-white uppercase tracking-wider mb-2.5">Điều Hướng</h5>
+              <ul class="space-y-1.5">
+                <li><a href="#team" class="hover:text-white transition-colors">Ban chủ nhiệm</a></li>
+                <li><a href="#tech" class="hover:text-white transition-colors">Khung chuyên môn</a></li>
+                <li><a href="#roadmap" class="hover:text-white transition-colors">Kế hoạch triển khai</a></li>
+                <li><a href="#rules" class="hover:text-white transition-colors">Quy chế sinh hoạt</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="text-xs font-semibold text-white uppercase tracking-wider mb-2.5">Kênh Thông Tin</h5>
+              <ul class="space-y-1.5">
+                <li><a href="https://tally.so/r/KYbqoA" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:text-rose-300 font-medium transition-colors open-tally-modal">✦ Đăng ký tham gia thành viên</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61579958011741" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Facebook Fanpage</a></li>
+                <li><a href="https://eft.io.vn" class="hover:text-white transition-colors">Website: eft.io.vn</a></li>
+                <li><a href="https://chuyenminhkhaist.edu.vn/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Trường: chuyenminhkhaist.edu.vn</a></li>
+                <li><a href="mailto:eternalflametech.eft@gmail.com" class="hover:text-white transition-colors">eternalflametech.eft@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-t border-white/5 pt-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-zinc-500 text-[11px]">
+            <div>&copy; 2026 Eternal Flame Tech Club &bull; <a href="https://chuyenminhkhaist.edu.vn/" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-300 transition-colors">THPT Chuyên Nguyễn Thị Minh Khai</a>.</div>
+            <div class="font-mono text-zinc-400">EST. 2026 &bull; THÀNH PHỐ CẦN THƠ, VIỆT NAM</div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Back-to-Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Lên đầu trang">
+    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Tally Registration Modal Dialog -->
+  <div id="tallyModal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[100] flex items-center justify-center p-3 sm:p-6 opacity-0 pointer-events-none transition-all duration-300" aria-modal="true" role="dialog" aria-labelledby="tallyModalTitle">
+    <div id="tallyModalContent" class="relative w-full max-w-4xl h-[92vh] sm:h-[86vh] bg-zinc-950/95 border border-white/15 rounded-2xl shadow-2xl shadow-violet-950/40 flex flex-col overflow-hidden transform scale-95 opacity-0 transition-all duration-300">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-4 sm:px-6 py-3.5 border-b border-white/10 bg-zinc-900/80 backdrop-blur-md shrink-0">
+        <div class="flex items-center gap-2.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-violet-500 to-rose-500"></span>
+          <h2 id="tallyModalTitle" class="text-sm sm:text-base font-bold text-white tracking-tight flex items-center gap-2">
+            <span>Đăng Ký Tham Gia</span>
+            <span class="hidden sm:inline text-xs text-zinc-400 font-normal">&bull; Eternal Flame Tech</span>
+          </h2>
+        </div>
+        
+        <div class="flex items-center gap-2">
+          <a href="https://tally.so/r/KYbqoA" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 text-xs text-zinc-400 hover:text-white px-2.5 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/5 transition-colors" title="Mở biểu mẫu trong tab mới">
+            <span>Mở tab mới</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          <button id="closeTallyModal" aria-label="Đóng cửa sổ" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/15 border border-white/10 text-zinc-300 hover:text-white flex items-center justify-center transition-colors cursor-pointer">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body (Iframe container + Spinner) -->
+      <div class="relative flex-1 min-h-0 w-full bg-zinc-950 overflow-hidden">
+        <!-- Loading State -->
+        <div id="tallyLoader" class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-zinc-950 text-zinc-400 z-10 transition-opacity duration-300 pointer-events-none">
+          <div class="w-8 h-8 border-2 border-violet-500/20 border-t-violet-500 rounded-full animate-spin"></div>
+          <span class="text-xs font-mono">Đang tải biểu mẫu...</span>
+        </div>
+
+        <iframe 
+          id="tallyIframe" 
+          src="https://tally.so/r/KYbqoA" 
+          class="w-full h-full border-0 bg-transparent" 
+          title="Đăng Ký Tham Gia - Eternal Flame Tech" 
+          allow="camera; microphone; autoplay; encrypted-media; fullscreen"
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- EFT Modular Scripts (Compatible with file:/// and http://) -->
+  <script src="js/modules/navbar.js"></script>
+  <script src="js/modules/canvas.js"></script>
+  <script src="js/modules/animations.js"></script>
+  <script src="js/modules/scroll.js"></script>
+  <script src="js/modules/stepper.js"></script>
+  <script src="js/modules/modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
