@@ -339,3 +339,27 @@
 .menu-slide-down {
   animation: menu-slide-down 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* ==========================================================================
+   TALLY REGISTRATION MODAL: SAFARI WEBKIT HIT-TEST & STACKING FIX
+   Uses dynamic negative z-index & visibility to ensure the modal and its
+   iframe can NEVER intercept touch/click events while closed.
+   ========================================================================== */
+#tallyModal {
+  z-index: -50;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, z-index 0.3s step-end;
+}
+
+#tallyModal:not(.opacity-0) {
+  z-index: 100;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease, z-index 0s;
+}
+
+#tallyModal.opacity-0 #tallyModalContent,
+#tallyModal.opacity-0 #tallyIframe {
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
