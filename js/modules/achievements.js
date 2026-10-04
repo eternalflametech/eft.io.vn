@@ -58,6 +58,9 @@
       const openModal = (tabId = 'robocon') => {
         clearTimeout(detailCloseTimeout);
 
+        // Normalize tabId: 'video' is merged into 'robocon'
+        if (tabId === 'video') tabId = 'robocon';
+
         switchModalTab(tabId);
 
         detailModal.style.zIndex = '100';
