@@ -22,9 +22,9 @@ app.use(express.static(path.join(__dirname, '.'), {
   etag: true
 }));
 
-// Route fallback for single page landing (Express 5 compatible)
+// 404 fallback handler (serves custom 404.html)
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.status(404).sendFile(path.resolve(__dirname, '404.html'));
 });
 
 // Start HTTP server

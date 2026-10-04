@@ -2,6 +2,8 @@
 module.exports = {
   content: [
     "./index.html",
+    "./404.html",
+    "./*.html",
     "./js/**/*.js",
     "./src/**/*.{html,js,css}"
   ],
